@@ -4,7 +4,7 @@ import java.io.*;
 class Tcpc{
      public static void main(String[] args) throws Exception {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        Socket sock=new Socket();
+        Socket sock=new Socket("127.0.0.1",1234);
         System.out.println("enter file name");
         String fname=br.readLine();
         OutputStream output=sock.getOutputStream();
